@@ -1,5 +1,5 @@
 class JsonKeysController < ApplicationController
-  def convert    
+  def convert
     begin
       json = JSON.parse(request.body.read)
     rescue JSON::ParserError => e
@@ -7,6 +7,7 @@ class JsonKeysController < ApplicationController
     end
 
     converted_json = ConvertService.new(json).convert_keys
+    
     render json: converted_json
   end
 end
