@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README documents the steps that are necessary to get the application up and running.
 
 Things you may want to cover:
 
 * Ruby version
+    - `rvm install 3.4.1`
+    - `rvm use 3.4.1`
 
-* System dependencies
+# How to run the test suite
 
-* Configuration
+`rails test`
 
-* Database creation
+# Deployment instructions
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Start Rails app `rails s`
+- Install Serve package `npm install -g serve`
+- Serve the frontend app `serve -s frontend`
